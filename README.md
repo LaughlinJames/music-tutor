@@ -26,6 +26,12 @@ This is intentionally **not** a note-policing or gamified scoring app. The goal 
 - Remembers prior takes in the same session
 - Lets the learner rate feedback for future tuning
 
+### Screenshots
+
+Session chat with live input, sequential takes, and clickable time phrases in coach replies:
+
+![Session chat with live input and timestamp links](docs/images/session-chat.png)
+
 ---
 
 # Why this exists
@@ -99,6 +105,10 @@ Conversational lesson feedback
 
 ```text
 music-tutor/
+├── docs/
+│   └── images/
+│       ├── session-chat.png
+│       └── rate-last-reply.png
 ├── client/
 │   ├── public/
 │   │   └── recorder-worklet.js
@@ -226,6 +236,8 @@ server/data/feedback.jsonl
 ```
 
 Recent feedback can be summarized into the coach prompt so the system can adapt over time.
+
+![Rate last reply — stars and optional notes](docs/images/rate-last-reply.png)
 
 To disable feedback context injection:
 
